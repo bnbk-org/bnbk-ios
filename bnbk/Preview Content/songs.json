@@ -1,0 +1,656 @@
+[
+  {
+    "songId": 301,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Jikalau setan menghadang"
+    },
+    "author": [
+      {
+        "name": "Anon"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "Jikalau setan menghadang, 'ku pandanglah Yesus; Jikalau bimbang hatiku, 'ku pandanglah Yesus! Ialah Batu Karangku, yang teguh s'lamanya. Ku dapat melawan set'ru, dengan kuasa-Nya.",
+      "Jikalau hatiku susah, dan taufan menempuh, seakan-akan 'ku kalah, dan hampir 'ku jatuh; Ku memandang ke Golgota, tempat Yesus mati, 'ku memuji karunia-Nya dan s'lamat yang dib'ri",
+      "Jikalau iblis menyerang, 'ku pandanglah Yesus; Tipunya tak dapat menang, 'ku ditolong Yesus; Kendati hebat pep'rangan, dalam kesunyian, 'ku mendapat kemenangan oleh kar'na iman."
+    ],
+    "music": {
+      "key-id": "G",
+      "key-og": "Ab",
+      "tempo": "Allegro Moderato",
+      "bpm": 96,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 302,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Dalam kesunyianku"
+    },
+    "author": [
+      {
+        "name": "Anon"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "Dalam kesunyianku, angin ribut menderu, 'ku diserang si jahat, suara pembujuk hebat; Ingat aku Yang Mah'kuasa, ingat aku Yang Mah'kuasa.",
+      "Jika laut bergelora, 'ku ditempuh bahaya, malam gelap gulita, ta'da bintang bercah'ya, Ingat aku Yang Mah'kuasa, ingat aku Yang Mah'kuasa.",
+      "Jiwaku sangat letih waktu dijajah dosa; Dalam susah sengsara, maut pun datang segera; Ingat aku Yang Mah'kuasa, Ingat aku Yang Mah'kuasa."
+    ],
+    "music": {
+      "key-id": "A",
+      "key-og": "Bb",
+      "tempo": "Moderato",
+      "bpm": 66,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 303,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Gunakanlah waktu yang Allah b'rikan"
+    },
+    "author": [
+      {
+        "name": "A.C. Bondam/LBC"
+      }
+    ],
+    "chorus": [
+      "Ta'da yang tetap, ta'da yang tetap, s'mua yang mulia jatuh dan hilang, hanya kecintaan yang 'kau nyatakan, tetap berharga di surga yang t'rang."
+    ],
+    "verse": [
+      "Gunakanlah waktu yang Allah b'rikan, singkat hidupmu, waktu berlalu; Dari hidupmu, apa 'kau tinggalkan? Hanyalah karya kecintaanmu.",
+      "Jangan buang waktumu sia-sia, tolong yang jatuh, hibur yang susah; Biar terangmu tetap bercahya, kabarkan hal Juru s'lamat dunia.",
+      "Pekerja'nmu bagi Tuhan dinilai hasilnya oleh Tuhan di surga; Nanti di sana 'kau tentu terima pahala yang telah tersedia."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Andante",
+      "bpm": 60,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 304,
+    "type": "nyanyian",
+    "title": {
+      "en": "Shall We Meet?",
+      "id": "Janganlah engkau mengeluh"
+    },
+    "author": [
+      {
+        "name": "G. H. Bates"
+      }
+    ],
+    "chorus": [
+      "Cukuplah anug'rah-Nya, walau 'ku menderita; Biar pun sampai di Golgota, cukuplah anug'rah-Nya."
+    ],
+    "verse": [
+      "Janganlah engkau mengeluh tentang keadaanmu; Jangan syak, tapi percaya pada anug'rah Allah.",
+      "Bila datang pencobaan, jangan mengeluh saja, kar'na Allah mau nyatakan cukuplah anug'rah-Nya.",
+      "Jangan mengeluh jikalau dihinakan dunia, sandarlah kepada Tuhan, cukuplah anug'rah-Nya.",
+      "Ingat dalam kesusahan, Tuhan tunjuk kuasa-Nya, walau dalam kelemahan, cukuplah anug'rah-Nya."
+    ],
+    "music": {
+      "key-id": "A",
+      "key-og": "Bb",
+      "tempo": "Moderato",
+      "bpm": 84,
+      "measure": "4/4",
+      "btb": 399,
+      "sasb": 378,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 305,
+    "type": "nyanyian",
+    "title": {
+      "en": "I Will Guide Thee",
+      "id": "Janji Tuhan sungguh indah"
+    },
+    "author": [
+      {
+        "name": "Phillip Paul Bliss"
+      }
+    ],
+    "chorus": [
+      "Ku mau antar, 'ku mau antar, dengan mata-Ku juga, dari dunia sampai surga, 'Ku mau antar s'lamanya."
+    ],
+    "verse": [
+      "Janji Tuhan sungguh indah bagi musafir s'mua: Dari dunia sampai surga, 'Ku mau antar s'lamanya.",
+      "Jikalau engkau digoda, tinggal sendirian saja, janji-Nya janganlah lupa, 'Ku mau antar s'lamanya",
+      "Kalau s'perti asaphilang pengharapan dan cita, janji-Nya tetaplah pegang, 'Ku mau antar s'lamanya.",
+      "Kalau aku putus nyawa, dengan maut 'kau bersua, dengarkanlah suara-Nya: 'Ku mau antar s'lamanya."
+    ],
+    "music": {
+      "key-id": "F",
+      "key-og": "G",
+      "tempo": "Moderato",
+      "bpm": 66,
+      "measure": "9/8",
+      "btb": 379,
+      "sasb": 335,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 306,
+    "type": "nyanyian",
+    "title": {
+      "en": "Aurelia",
+      "id": "Kepada Allah Bapa serahkan"
+    },
+    "author": [
+      {
+        "name": "Samuel Sebastian Wesley"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "Kepada Allah Bapa serahkan hidupmu, dan s'mua kuatirmu, janganlah mengeluh; Ia mengatur jalan hidupmu di dunia, dan b'ri jalan yang aman kepada anak-Nya.",
+      "Bersandar kepada-Nya, tekun dalam doa, Ia b'ri pertolongan dalam putus asa, tentu pernah 'kau lihat ajaib mukjizat-Nya, yang menyatakan hikmat dengan anugerah.",
+      "Jikalau 'kau setia dengan tetap teguh, pahala tersedia di tangan Tuhanmu, sesudah perjuangan dikaruniakan-Nya, mahkota kemenangan di surga yang baka."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Andante",
+      "bpm": 72,
+      "measure": "4/4",
+      "btb": 246,
+      "sasb": 213,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 307,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Ke rumah tempat yang senang"
+    },
+    "author": [
+      {
+        "name": "Anon"
+      }
+    ],
+    "chorus": [
+      "Sabar dalam kesusahanmu, sabar, Tuhan s'lalu sertamu; Sabar, sabar, Tuhan menguatkanmu."
+    ],
+    "verse": [
+      "Ke rumah tempat yang senang, di mana ta'da lagi p'rang, dan ta'da susah dan duka, ke sana aku rindulah",
+      "Dan bila jiwaku lelah, di kala hidupku susah, 'ku rindu rumah Bapa t'rang, di sana aku bersenang.",
+      "Di rumah Bapa yang kudus, di sana ada Penebus; Itulah kerinduanku, di sana ada Rajaku.",
+      "Di dalam dunia yang fana, bekerja dengan setia, walau pun berat kerjamu tersedialah upahmu."
+    ],
+    "music": {
+      "key-id": "G",
+      "key-og": "G",
+      "tempo": "Allegretto",
+      "bpm": 110,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 308,
+    "type": "nyanyian",
+    "title": {
+      "en": "The Cross Now Covers My Sins",
+      "id": "Ku akan kumpulkan domba-Ku"
+    },
+    "author": [
+      {
+        "name": "English folk melody"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "Ku akan kumpulkan domba-Ku yang telah tercerai berai; Ku antarkan ke tempat rumput, dan kandang di gunung permai; Yang tersesat, akan Ku cari dan yang lemah, Aku kuatkan; \"Yang tersesat, Ku bawa pulang,\" Demikianlah firman Tuhan.",
+      "\"Jangan takut! Aku sertamu!\" 'Ku mengantarmu selalu; Ku tahu namamu, 'kau milik-Ku, Aku kabulkan doamu! Bila 'kau menyeb'rangi sungai, Engkau tidak akan tenggelam; Di Api pun 'kau tak terbakar, sabda Tuhan s'mesta alam.",
+      "Layangkan matamu ke Gunung, dari sana Penolongmu menjaga sampai selamanya, setiap k'luar masukmu; Kakimu tak akan terantuk, penunggumu tidak mengantuk, panas pun tak 'kan menyengatmu, Tuhan naunganmu yang sejuk."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Allegretto",
+      "bpm": 56,
+      "measure": "6/8",
+      "btb": 486,
+      "sasb": 434,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 309,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Meski jalan hidupmu"
+    },
+    "author": [
+      {
+        "name": "A. W. Howard"
+      }
+    ],
+    "chorus": [
+      "Betapa indah mulia kesetiaan Allah; Kita tetap milik-Nya untuk s'lama-lamanya"
+    ],
+    "verse": [
+      "Meski jalan hidupmu terasa amat b'rat, sandarlah pada Tuhan, Yesus ada dekat; Bila hari berkabut dan malam pun gelap, \"O, janganlah 'kau takut,\" perjanjian-Nya tetap!",
+      "Carilah kuasa Tuhan yang tetap setia, Ia b'ri kemenangan dengan kuasa-Nya; Walau jalanmu sukar, ikutlah jejak-Nya, kar'na Ia mengantar, peganglah tangan-Nya.",
+      "Carilah perlindungan kepada Allahmu, yang pada waktu susah mengatur hidupmu; Ia pun dengan kasih dalam suka-duka menarik engkau lebih dekat kepada-Nya."
+    ],
+    "music": {
+      "key-id": "C",
+      "key-og": "D",
+      "tempo": "Allegro Moderato",
+      "bpm": 104,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 310,
+    "type": "nyanyian",
+    "title": {
+      "en": "It Is Well With My Soul",
+      "id": "Meski jiwaku dirundung kesusahan"
+    },
+    "author": [
+      {
+        "name": "Phillip Paul Bliss"
+      }
+    ],
+    "chorus": [
+      "Jiwaku bers'lamat, jiwaku bers'lamat, bergirang."
+    ],
+    "verse": [
+      "Meski jiwaku dirundung kesusahan, laut hidup besar gelombang; Walaupun jalanku banyak rintangan, jiwaku bers'lamat, bergirang.",
+      "Walau Iblis menggoda dan coba menang, jiwaku s'lalu bergirang; Oleh kuasa Tuhan takutku hilang, jiwaku bers'lamat, bergirang.",
+      "Biarpun kumasuk dalam lembah bayang maut, tak takut Iblis menyerang, kar'na Kristus yang menuntun hidupku, jiwaku bers'lamat, bergirang.",
+      "Jiwaku menanti Engkau, ya Tuhan, pulang ke surga yang terang; Ku akan memuji nama-Mu Tuhan, jiwaku bers'lamat, bergirang."
+    ],
+    "music": {
+      "key-id": "C",
+      "key-og": "D",
+      "tempo": "Moderato",
+      "bpm": 88,
+      "measure": "4/4",
+      "btb": 695,
+      "sasb": 704,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 311,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Musafir yang jalan ke surga"
+    },
+    "author": [
+      {
+        "name": "Anon"
+      }
+    ],
+    "chorus": [
+      "Pandanglah pada Yesus! Pandanglah pada Yesus! Siang malam Tuhan menjaga; Pandanglah pada Yesus!"
+    ],
+    "verse": [
+      "Musafir yang jalan ke surga, pandanglah pada Yesus! Yang pimpin 'kau dengan tangan-Nya; Pandanglah pada Yesus!",
+      "Jikalau digodai setan, pandanglah pada Yesus! Tinggallah tetap pada jalan, yang antar pada Yesus",
+      "Pada waktu tinggalkan dunia, pandanglah pada Yesus! Yang memimpin engkau ke surga, pandanglah pada Yesus!"
+    ],
+    "music": {
+      "key-id": "G",
+      "key-og": "Ab",
+      "tempo": "Moderato",
+      "bpm": 78,
+      "measure": "6/8",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 312,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "O, s'habat yang Maha mulia"
+    },
+    "author": [
+      {
+        "name": "Alexander R. Reingle"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "O, s'habat yang Maha mulia, 'Kau teladan kami; Dan meski pun engkau Raja, suka melayani.",
+      "Engkau yang panggil padaku, o Tuhan yang kuasa, bri'kanlah hikmat padaku, murid-Mu yang rendah.",
+      "Jikalau Tuhan sucikan hidupku selalu, 'ku tak dapat dikalahkan oleh kuasa set'ru.",
+      "B'ri kesadaran padaku, sekiranya jatuh, kuatkanlah imanku s'lalu, milik-Mu yang sungguh."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Moderato",
+      "bpm": 88,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 313,
+    "type": "nyanyian",
+    "title": {
+      "en": "There Is A Happy Land",
+      "id": "Sampai lihat neg'ri t'rang"
+    },
+    "author": [
+      {
+        "name": "Indian melody"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "Sampai lihat neg'ri t'rang, maju saja; Orang saleh bersenang, maju saja; Sampai t'rima upahmu dari Yesus Tuhanmu, dan menghadap takhta-Nya, maju saja.",
+      "Meski setan menggoda, maju saja; Jangan maju, katanya; maju saja; Mahkota sesudah p'rang dib'ri pada yang menang. Dalam surga yang senang, maju saja.",
+      "Meski angit ribut k'ras, maju saja; Dalam g'lap tetap awas, maju saja; Yesus dekat s'lamanya padamu dalam susah, yang menurut p'rintah-Nya, maju saja."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Moderato",
+      "bpm": 84,
+      "measure": "4/4",
+      "btb": 235,
+      "sasb": 176,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 314,
+    "type": "nyanyian",
+    "title": {
+      "en": "Mighty To Keep",
+      "id": "S'ring 'ku gelisah dan lemah"
+    },
+    "author": [
+      {
+        "name": "Herbert Howard Booth"
+      }
+    ],
+    "chorus": [
+      "Juru S'lamatku yang Mahakuasa, p'liharakan selamanya! Juru S'lamatku yang Mahakuasa, p'liharakan s'lamanya."
+    ],
+    "verse": [
+      "S'ring 'ku gelisah dan lemah serta dicobai, sering kelam-kabut menyesah, mawar diganti duri, pada saat 'ku digoda; Berbisiklah Roh Allah, jangan takut, percaya saja, Juru S'lamatmu yang kuasa!",
+      "Ta'da awan terlalu g'lap, ta'da musuh yang kuat, tiada malam amat senyap, tak ada beban yang b'rat, s'mua lenyap dan hilanglah; Sebab itu, 'ku heran, mengapa 'ku tidak percaya Juru S'lamatku yang kuasa!",
+      "Yesus, makin 'ku percaya pada-Mu selalu, di dalam ribut pertempuran, 'ku b'rani lawan set'ru; Lebih dari kehidupan, bagiku 'Kau berharga; Badai oleh-Mu ditenangkan; Engkau Yesus Mahakuasa."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "F",
+      "tempo": "Andante",
+      "bpm": 56,
+      "measure": "6/8",
+      "btb": 733,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 315,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Ta'da sahabat seperti Yesus"
+    },
+    "author": [
+      {
+        "name": "A. C. Bondam/LBC"
+      }
+    ],
+    "chorus": [
+      "Tuhan tahu s'gala kesusahan, memb'ri penghiburan s'lalu. Ta'da sahabat seperti Yesus, Tuhanku, Tuhanku!"
+    ],
+    "verse": [
+      "Ta'da sahabat seperti Yesus, Tuhanku, Tuhanku! Yang berdosa Ia mau menebus, Tuhanku, Tuhanku!",
+      "Dalam gelap, t'rang-Nya bercahaya, Tuhanku, Tuhanku! Hadirat-Nya selalu 'ku rasa, Tuhanku, Tuhanku!",
+      "Tak seorang pun ditinggalkan-Nya, Tuhanku, Tuhanku! Dalam kelemahan dikuatkan-Nya, Tuhanku, Tuhanku!"
+    ],
+    "music": {
+      "key-id": "G",
+      "key-og": "G",
+      "tempo": "Moderato",
+      "bpm": 84,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 316,
+    "type": "nyanyian",
+    "title": {
+      "en": "Mendelssohn",
+      "id": "Tuhan ada, bila fajar merekah"
+    },
+    "author": [
+      {
+        "name": "Mendelssohn"
+      }
+    ],
+    "chorus": [
+      ""
+    ],
+    "verse": [
+      "Tuhan ada, bila fajar merekah, burung berkicau dan g'lap hilanglah; Lebih dari keindahannya s'mua, 'ku tahu Tuhan masih besertaku.",
+      "Tuhan ada, pada setiap pagi, hari berganti dengan t'rang baru, setelah bangun aku menyadari, Surga dekat, Tuhan besertaku.",
+      "Bila lelah, sedang 'ku istirahat, mata tertutup, ingin berdoa, dinaungi sayap-Mu, 'ku sejaht'ra, bila bangun, 'ku tahu tuhan dekat.",
+      "Pada Hari Kebangkitan mulia, jiwa bangkit bayang maut lenyaplah, fajar baka cerlang keindahannya; Lebih mulia 'ku tinggal serta-Nya."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Andante",
+      "bpm": 60,
+      "measure": "4/4",
+      "btb": 547,
+      "sasb": 493,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 317,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": "Tuhan, aku tak mau minta"
+    },
+    "author": [
+      {
+        "name": "Anon"
+      }
+    ],
+    "chorus": [
+      "Pimpinlah aku Tuhanku, hingga 'ku dengar suara-Mu: \"Sabas, hai hamba yang sungguh!\""
+    ],
+    "verse": [
+      "Tuhan, aku tak mau minta agar jalanku t'rus rata, melainkan oleh karunia selalu aku setia.",
+      "Meski selama di dunia, tak jadi yang aku suka; Tuhan mend'rita sengsara, 'ku ikut pada jejak-Nya",
+      "Jikalau hatiku lemah, cemas, berat dan bersusah, b'ritakan t'rang dan karunia, agar jiwaku sentosa."
+    ],
+    "music": {
+      "key-id": "C",
+      "key-og": "D",
+      "tempo": "Moderato",
+      "bpm": 100,
+      "measure": "4/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  },
+  {
+    "songId": 318,
+    "type": "nyanyian",
+    "title": {
+      "en": "",
+      "id": ""
+    },
+    "author": [
+      {
+        "name": "Anon"
+      }
+    ],
+    "chorus": [
+      "Dibaptis dengan Roh-Mu, senjataku kuasa-Mu; Ku dapat menang dalam susah p'rang oleh kuasa-Mu selalu."
+    ],
+    "verse": [
+      "Tuhan Yesus, yang 'ku cinta, hidupku jadi milik-Mu; Hanya kar'na cinta 'ku mengikut Tuhan, sepanjang umur hidupku.",
+      "Tuhan, 'ku cinta pada-Mu, 'ku hidup bagi-Mu s'lalu; Moga 'ku s'lamanya menurut p'rintah-Mu, turut kehendak-Mu saja.",
+      "Kalau dalam p'rang 'ku penat, dan hatiku susah sangat, Ku pandang salib-Mu, luka-Mu bagiku, 'ku maju meski jalan b'rat."
+    ],
+    "music": {
+      "key-id": "D",
+      "key-og": "Eb",
+      "tempo": "Andante Con Moto",
+      "bpm": 104,
+      "measure": "6/4",
+      "btb": 0,
+      "sasb": 0,
+      "sf": 0,
+      "ks": 0
+    },
+    "category": {
+      "header": "Keprajuritan",
+      "type": "Peperangan Rohani"
+    }
+  }
+]
