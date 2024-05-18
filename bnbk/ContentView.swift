@@ -15,7 +15,7 @@ struct ContentView: View {
         NavigationStack {
             List(songIndexes) { idx in
                 NavigationLink {
-                    Text(idx.title.id)
+                    NyanyianDetailView(songId: idx.songId)
                 } label: {
                     Text("\(idx.songId)")
                         .padding()
