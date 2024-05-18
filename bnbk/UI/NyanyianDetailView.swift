@@ -13,54 +13,71 @@ struct NyanyianDetailView: View {
     @State var song: Song?
     
     var body: some View {
-        VStack {
-            if let song = song {
-                Text(song.title.id)
-                    .font(.largeTitle)
-                    .padding()
-                
-                Text(song.title.en ?? "")
-                    .font(.title)
-                    .italic()
-                    .foregroundColor(.secondary)
-                
-                // Display other parts of the song
-                ForEach(song.verse, id: \.self) { verse in
-                    Text(verse)
-                        .padding(.vertical, 4)
-                }
-                
-                ForEach(song.chorus, id: \.self) { chorus in
-                    Text(chorus)
-                        .padding(.vertical, 4)
-                        .font(.headline)
-                }
-                
-                // Display other song details as needed
-            } else {
-                ProgressView()
-                    .onAppear{
-                        Task {
-                            do {
-                                try await fetchSongDetail()
-                            } catch {
-                                print("Error happened")
+        ScrollView(.vertical) {
+            VStack(alignment: .leading) {
+                if let song = song {
+                    
+                    ZStack {
+                        Image("congregational")
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .overlay(Color.black.opacity(0.2))
+                        
+                        HStack {
+                            VStack(alignment: .leading, spacing: 10) {
+                                Spacer()
+                                Text(song.title.id)
+                                    .font(.title2)
+                                    .foregroundStyle(.white)
+                                if let enTitle = song.title.en, !enTitle.isEmpty {
+                                    Text(enTitle)
+                                        .font(.subheadline)
+                                        .italic()
+                                        .foregroundColor(.white)
+                                }
+                                
+                                HStack(spacing: 10) {
+                                    if let authors = song.authors, !authors.isEmpty {
+                                        ForEach(authors, id: \.self) { author in
+                                            Text(author.name)
+                                                .font(.caption)
+                                                .foregroundStyle(.thinMaterial)
+                                        }
+                                    }
+                                }
+                            }
+                            Spacer()
+                        }.padding()
+                    }.frame(maxWidth: .infinity)
+
+                    
+                    Group {
+                        // Display other parts of the song
+                        ForEach(song.verse, id: \.self) { verse in
+                            Text(verse)
+                        }
+                        if let choruses = song.chorus, !choruses.isEmpty {
+                            ForEach(choruses, id: \.self) { chorus in
+                                Text(chorus)
                             }
                         }
-                    }
-//                Text("Loading...")
-//                    .onAppear {
-//                        Task {
-//                            do {
-//                                try await fetchSongDetail()
-//                            } catch {
-//                                print("Error happened")
-//                            }
-//                        }
-//                    }
+                        
+                    }.padding()
+                    
+                } else {
+                    ProgressView()
+                        .onAppear{
+                            Task {
+                                do {
+                                    try await fetchSongDetail()
+                                } catch {
+                                    print("Error happened")
+                                }
+                            }
+                        }
+                }
             }
-        }
-        .padding()
+        }.ignoresSafeArea()
     }
     
     func fetchSongDetail() async throws {
@@ -81,17 +98,16 @@ struct NyanyianDetailView: View {
     }
 }
 
-#Preview {
-    NyanyianDetailView(songId: 1)
-}
-
 // Sample Data
-struct SongDetail_Previews: PreviewProvider {
+struct NyanyianDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let sampleSong = Song(
             id: "sample_id",
             songId: 1,
             title: Title(en: "The Wonder of His Grace", id: "Banyaklah Yang 'Ku Tak Dapat Mengerti", nl: nil, kr: nil),
+            authors: [
+                Author(name: "Howard Davies", uid: nil)
+            ],
             type: "nyanyian",
             verse: [
                 "Banyaklah yang 'ku tak dapat mengerti, semua bagaikan misteri;\nTapi karunia Allah yang 'ku t'rima sungguh mengherankan dan mulia.",
