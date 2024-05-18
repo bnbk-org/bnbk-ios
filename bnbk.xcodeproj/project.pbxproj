@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		295BB2952BF720C400CF0431 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295BB2942BF720C400CF0431 /* Song.swift */; };
-		295BB2972BF7225900CF0431 /* songs.json in Resources */ = {isa = PBXBuildFile; fileRef = 295BB2962BF7225900CF0431 /* songs.json */; };
+		295BB29D2BF7251600CF0431 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 295BB29C2BF7251600CF0431 /* SwiftyJSON */; };
+		297BE7022BF88D3400F9DBF8 /* songIndex.json in Resources */ = {isa = PBXBuildFile; fileRef = 297BE7012BF88D3300F9DBF8 /* songIndex.json */; };
+		297BE7042BF88D5700F9DBF8 /* SongIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BE7032BF88D5700F9DBF8 /* SongIndex.swift */; };
+		297BE7062BF88E2B00F9DBF8 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BE7052BF88E2B00F9DBF8 /* Bundle-Decodable.swift */; };
 		29E2A0562BF712B8005595E6 /* bnbkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2A0552BF712B8005595E6 /* bnbkApp.swift */; };
 		29E2A0582BF712B8005595E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2A0572BF712B8005595E6 /* ContentView.swift */; };
-		29E2A05A2BF712B8005595E6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2A0592BF712B8005595E6 /* Item.swift */; };
 		29E2A05C2BF712BA005595E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E2A05B2BF712BA005595E6 /* Assets.xcassets */; };
 		29E2A05F2BF712BA005595E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E2A05E2BF712BA005595E6 /* Preview Assets.xcassets */; };
 		29E2A0692BF712BA005595E6 /* bnbkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E2A0682BF712BA005595E6 /* bnbkTests.swift */; };
@@ -37,12 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		295BB2942BF720C400CF0431 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
-		295BB2962BF7225900CF0431 /* songs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = songs.json; sourceTree = "<group>"; };
+		297BE7012BF88D3300F9DBF8 /* songIndex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = songIndex.json; path = ../../../BnbkProjectAssets/database/index/songIndex.json; sourceTree = "<group>"; };
+		297BE7032BF88D5700F9DBF8 /* SongIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongIndex.swift; sourceTree = "<group>"; };
+		297BE7052BF88E2B00F9DBF8 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		29E2A0522BF712B8005595E6 /* bnbk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bnbk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E2A0552BF712B8005595E6 /* bnbkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bnbkApp.swift; sourceTree = "<group>"; };
 		29E2A0572BF712B8005595E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		29E2A0592BF712B8005595E6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		29E2A05B2BF712BA005595E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E2A05E2BF712BA005595E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		29E2A0642BF712BA005595E6 /* bnbkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bnbkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				295BB29D2BF7251600CF0431 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +82,7 @@
 		295BB2932BF720AD00CF0431 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				295BB2942BF720C400CF0431 /* Song.swift */,
+				297BE7032BF88D5700F9DBF8 /* SongIndex.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -111,9 +113,10 @@
 				295BB2932BF720AD00CF0431 /* models */,
 				29E2A0552BF712B8005595E6 /* bnbkApp.swift */,
 				29E2A0572BF712B8005595E6 /* ContentView.swift */,
-				29E2A0592BF712B8005595E6 /* Item.swift */,
 				29E2A05B2BF712BA005595E6 /* Assets.xcassets */,
 				29E2A05D2BF712BA005595E6 /* Preview Content */,
+				297BE7052BF88E2B00F9DBF8 /* Bundle-Decodable.swift */,
+				297BE7012BF88D3300F9DBF8 /* songIndex.json */,
 			);
 			path = bnbk;
 			sourceTree = "<group>";
@@ -122,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				29E2A05E2BF712BA005595E6 /* Preview Assets.xcassets */,
-				295BB2962BF7225900CF0431 /* songs.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -160,6 +162,9 @@
 			dependencies = (
 			);
 			name = bnbk;
+			packageProductDependencies = (
+				295BB29C2BF7251600CF0431 /* SwiftyJSON */,
+			);
 			productName = bnbk;
 			productReference = 29E2A0522BF712B8005595E6 /* bnbk.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +237,9 @@
 				Base,
 			);
 			mainGroup = 29E2A0492BF712B8005595E6;
+			packageReferences = (
+				295BB29B2BF7251600CF0431 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 29E2A0532BF712B8005595E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -248,7 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295BB2972BF7225900CF0431 /* songs.json in Resources */,
+				297BE7022BF88D3400F9DBF8 /* songIndex.json in Resources */,
 				29E2A05F2BF712BA005595E6 /* Preview Assets.xcassets in Resources */,
 				29E2A05C2BF712BA005595E6 /* Assets.xcassets in Resources */,
 			);
@@ -275,10 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				295BB2952BF720C400CF0431 /* Song.swift in Sources */,
+				297BE7042BF88D5700F9DBF8 /* SongIndex.swift in Sources */,
 				29E2A0582BF712B8005595E6 /* ContentView.swift in Sources */,
-				29E2A05A2BF712B8005595E6 /* Item.swift in Sources */,
 				29E2A0562BF712B8005595E6 /* bnbkApp.swift in Sources */,
+				297BE7062BF88E2B00F9DBF8 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +616,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		295BB29B2BF7251600CF0431 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		295BB29C2BF7251600CF0431 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 295BB29B2BF7251600CF0431 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29E2A04A2BF712B8005595E6 /* Project object */;
 }
