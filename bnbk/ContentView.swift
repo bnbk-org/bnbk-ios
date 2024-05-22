@@ -9,11 +9,13 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    let songIndexes: [SongIndex] = Bundle.main.decode("songIndex.json")
+    @State private var viewModel = ViewModel()
+    
+//    let songIndexes: [SongIndex] = Bundle.main.decode("songIndex.json")
 
     var body: some View {
         NavigationStack {
-            List(songIndexes) { idx in
+            List(viewModel.songIndexes) { idx in
                 NavigationLink {
                     NyanyianDetailView(songId: idx.songId)
                 } label: {
@@ -34,6 +36,8 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Nyanyian")
+        }.onAppear {
+            viewModel.fetchSongs(page: 1)
         }
     }
 }

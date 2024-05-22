@@ -9,17 +9,21 @@ import Foundation
 
 struct SongIndex: Codable, Identifiable {
     let id: String
-    let songId : Int
-    let title : TitleIndex
+    let songId: Int
+    let title: TitleIndex
+    let songType: String
     
     enum CodingKeys: String, CodingKey {
-        case id = "_id"
+        case id
         case songId
         case title
+        case songType = "type"
     }
 }
 
 struct TitleIndex: Codable {
     let en: String?
     let id: String
+    let nl: String?
+    let kr: String?
 }

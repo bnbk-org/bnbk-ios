@@ -11,6 +11,9 @@ struct NyanyianDetailView: View {
     let songId: Int
     let type = "nyanyian"
     @State var song: Song?
+    @State private var showingPopover = false
+    
+    let heights = stride(from: 0.5, through: 1.0, by: 0.1).map { PresentationDetent.fraction($0) }
     
     var body: some View {
         ScrollView(.vertical) {
@@ -26,6 +29,9 @@ struct NyanyianDetailView: View {
                         HStack {
                             VStack(alignment: .leading, spacing: 10) {
                                 Spacer()
+                                Text("\(song.category.header) - \(song.category.type)")
+                                    .foregroundStyle(.thinMaterial)
+                                    .font(.caption)
                                 Text(song.title.id)
                                     .font(.title2)
                                     .foregroundStyle(.white)
@@ -49,17 +55,71 @@ struct NyanyianDetailView: View {
                             Spacer()
                         }.padding()
                     }.frame(maxWidth: .infinity)
-
                     
                     Group {
-                        // Display other parts of the song
-                        ForEach(song.verse, id: \.self) { verse in
-                            Text(verse)
-                        }
-                        if let choruses = song.chorus, !choruses.isEmpty {
-                            ForEach(choruses, id: \.self) { chorus in
-                                Text(chorus)
+                        HStack {
+                            VStack(alignment: .leading) {
+                                if let keyId = song.music.keyId {
+                                    let keyOgText = song.music.keyOg != nil ? " (\(song.music.keyOg!))" : ""
+                                    HStack() {
+                                        Text("Do = \(keyId)\(keyOgText)")
+                                        
+                                        Button(action: {
+                                            showingPopover.toggle()
+                                        }) {
+                                            Image(systemName: "info.circle")
+                                                .foregroundColor(.blue)
+                                        }
+                                        .sheet(isPresented: $showingPopover) {
+                                            InfoPopoverView(keyId: keyId, keyOg: song.music.keyOg)
+                                                .padding()
+                                                .presentationBackground(.ultraThinMaterial)
+                                                .presentationDetents(Set(heights))
+                                                
+                                        }
+                                    }
+                                }
+                                
+                                HStack {
+                                    if let tempo = song.music.tempo {
+                                        Text(tempo)
+                                    }
+                                    if let bpm = song.music.bpm {
+                                        Text("= \(bpm)")
+                                    }
+                                }
+                                
                             }
+                            
+                            VStack(alignment: .trailing) {
+                                if let sasb = song.music.sasb {
+                                    Text("SASB \(sasb)")
+                                }
+                            }
+                        }
+                    }.padding()
+                    
+                    Group {
+                        Text(song.verse[0])
+                        
+                        VStack(alignment: .leading) {
+                            Text("KOOR")
+                                .font(.subheadline)
+                                .bold()
+                                .padding(.leading, 10)
+                            HStack {
+                                Spacer()
+                                    .frame(width: 10)
+                                if let choruses = song.chorus, !choruses.isEmpty {
+                                    ForEach(choruses, id: \.self) { chorus in
+                                        Text(chorus)
+                                    }
+                                }
+                            }
+                        }
+                        
+                        ForEach(song.verse.indices.dropFirst(), id: \.self) { index in
+                                Text(song.verse[index])
                         }
                         
                     }.padding()
@@ -98,6 +158,25 @@ struct NyanyianDetailView: View {
     }
 }
 
+struct InfoPopoverView: View {
+    let keyId: String
+    let keyOg: String?
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Text("Nada Dasar")
+                .font(.headline)
+            if let keyOg = keyOg {
+                Text("Nada dasar \(keyOg) merupakan nada asli dari lagu ini (berdasarkan Salvation Army Song Book).")
+                    .font(.body)
+            }
+            Text("Nada dasar \(keyId) merupakan nada yang disesuaikan.")
+                .font(.body)
+            
+            Spacer()
+        }
+    }
+}
+
 // Sample Data
 struct NyanyianDetailView_Previews: PreviewProvider {
     static var previews: some View {
@@ -125,6 +204,7 @@ struct NyanyianDetailView_Previews: PreviewProvider {
                 bpm: 84,
                 btb: nil,
                 crossBtb: nil,
+                sasb: 873,
                 sf: nil,
                 ks: 52
             ),

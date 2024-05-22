@@ -39,6 +39,7 @@ struct Music: Codable {
     let bpm: Int?
     let btb: Int?
     let crossBtb: Int?
+    let sasb: Int?
     let sf: Int?
     let ks: Int?
 }

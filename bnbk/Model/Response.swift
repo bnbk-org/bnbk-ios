@@ -15,3 +15,12 @@ struct Response: Codable {
     let errors: String?
     let metadata: String?
 }
+
+struct ArrayResponse: Codable {
+    let code: Int
+    let status: String
+    let data: [SongIndex]
+    let paging: String?
+    let errors: String?
+    let metadata: String?
+}
