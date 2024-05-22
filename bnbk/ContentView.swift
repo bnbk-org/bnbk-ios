@@ -10,12 +10,11 @@ import SwiftData
 
 struct ContentView: View {
     @State private var viewModel = ViewModel()
-    
-//    let songIndexes: [SongIndex] = Bundle.main.decode("songIndex.json")
 
     var body: some View {
         NavigationStack {
-            List(viewModel.songIndexes) { idx in
+            List(viewModel.songIndexes.indices, id: \.self) { index in
+                let idx = viewModel.songIndexes[index]
                 NavigationLink {
                     NyanyianDetailView(songId: idx.songId)
                 } label: {
@@ -34,10 +33,16 @@ struct ContentView: View {
                         }
                     }
                 }
+                .onAppear {
+                    if index == viewModel.songIndexes.count - 1 {
+                        viewModel.fetchSongs(page: viewModel.currentPage + 1)
+                    }
+                }
             }
             .navigationTitle("Nyanyian")
-        }.onAppear {
-            viewModel.fetchSongs(page: 1)
+        }
+        .onAppear {
+            viewModel.fetchSongs(page: 0)
         }
     }
 }
