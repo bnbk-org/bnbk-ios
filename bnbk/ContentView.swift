@@ -6,11 +6,10 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct ContentView: View {
+    
     @State private var viewModel = ViewModel()
-
     var body: some View {
         NavigationStack {
             List(viewModel.songIndexes.indices, id: \.self) { index in
@@ -20,11 +19,11 @@ struct ContentView: View {
                 } label: {
                     Text("\(idx.songId)")
                         .padding()
-                    
+
                     VStack(alignment: .leading) {
                         Text(idx.title.id)
                             .font(.body)
-                        
+
                         if let en = idx.title.en, !en.isEmpty {
                             Text(en)
                                 .font(.footnote)
@@ -40,11 +39,27 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Nyanyian")
-        }
-        .onAppear {
-            viewModel.fetchSongs(page: 0)
+            .onAppear {
+                viewModel.fetchSongs(page: 0)
+            }
         }
     }
+
+//    var body: some View {
+//        TabView {
+//            HomeView()
+//                .tabItem {
+//                    Image(systemName: "house")
+//                    Text("Beranda")
+//                }.toolbar(.hidden, for: .tabBar)
+//            SearchView()
+//                .tabItem {
+//                    Image(systemName: "magnifyingglass")
+//                    Text("Cari")
+//                }.toolbar(.hidden, for: .tabBar)
+//        }
+//        
+//    }
 }
 
 #Preview {

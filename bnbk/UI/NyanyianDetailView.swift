@@ -11,7 +11,8 @@ struct NyanyianDetailView: View {
     let songId: Int
     let type = "nyanyian"
     @State var song: Song?
-    @State private var showingPopover = false
+    @State private var showingMusicAttributesPopover = false
+    @State private var showingMusicNumbersPopover = false
     
     let heights = stride(from: 0.5, through: 1.0, by: 0.1).map { PresentationDetent.fraction($0) }
     
@@ -29,7 +30,7 @@ struct NyanyianDetailView: View {
                         HStack {
                             VStack(alignment: .leading, spacing: 10) {
                                 Spacer()
-                                Text("\(song.category.header) - \(song.category.type)")
+                                Text("\(song.category.header): \(song.category.type)")
                                     .foregroundStyle(.thinMaterial)
                                     .font(.caption)
                                 Text(song.title.id)
@@ -63,20 +64,6 @@ struct NyanyianDetailView: View {
                                     let keyOgText = song.music.keyOg != nil ? " (\(song.music.keyOg!))" : ""
                                     HStack() {
                                         Text("Do = \(keyId)\(keyOgText)")
-                                        
-                                        Button(action: {
-                                            showingPopover.toggle()
-                                        }) {
-                                            Image(systemName: "info.circle")
-                                                .foregroundColor(.blue)
-                                        }
-                                        .sheet(isPresented: $showingPopover) {
-                                            InfoPopoverView(keyId: keyId, keyOg: song.music.keyOg)
-                                                .padding()
-                                                .presentationBackground(.ultraThinMaterial)
-                                                .presentationDetents(Set(heights))
-                                                
-                                        }
                                     }
                                 }
                                 
@@ -90,27 +77,44 @@ struct NyanyianDetailView: View {
                                 }
                                 
                             }
-                            
+                            Spacer()
                             VStack(alignment: .trailing) {
-                                if let sasb = song.music.sasb {
+                                if let sasb = song.music.sasb, sasb > 0 {
                                     Text("SASB \(sasb)")
+                                }
+                                if let btb = song.music.btb, btb > 0 {
+                                    Text("BTB \(btb)")
+                                }
+                                if let crossBtb = song.music.crossBtb, crossBtb > 0 {
+                                    Text("BTB alt. \(crossBtb)")
+                                }
+                                if let sf = song.music.sf, sf > 0 {
+                                    Text("SF \(sf)")
+                                }
+                                if let ks = song.music.ks, ks > 0 {
+                                    Text("KS \(ks)")
                                 }
                             }
                         }
                     }.padding()
+                        .font(.caption)
                     
+                    Divider()
+                
                     Group {
+                        
                         Text(song.verse[0])
                         
-                        VStack(alignment: .leading) {
-                            Text("KOOR")
-                                .font(.subheadline)
-                                .bold()
-                                .padding(.leading, 10)
-                            HStack {
-                                Spacer()
-                                    .frame(width: 10)
-                                if let choruses = song.chorus, !choruses.isEmpty {
+                        if let choruses = song.chorus, !choruses.isEmpty {
+                            VStack(alignment: .leading) {
+                                Text("KOOR")
+                                    .font(.subheadline)
+                                    .bold()
+                                    .padding(.leading, 10)
+                                HStack {
+                                    Spacer()
+                                        .frame(width: 10)
+
                                     ForEach(choruses, id: \.self) { chorus in
                                         Text(chorus)
                                     }
@@ -122,6 +126,20 @@ struct NyanyianDetailView: View {
                                 Text(song.verse[index])
                         }
                         
+                        Button(action: {
+                            showingMusicAttributesPopover.toggle()
+                        }) {
+                            Image(systemName: "info.circle")
+                                .foregroundColor(.blue)
+                            Text("Pelajari lagu Ini")
+                        }.font(.caption)
+                        .sheet(isPresented: $showingMusicAttributesPopover) {
+                            InfoPopoverView()
+                                .padding()
+                                .presentationBackground(.white)
+                                .presentationDetents(Set(heights))
+                                
+                        }
                     }.padding()
                     
                 } else {
@@ -143,7 +161,7 @@ struct NyanyianDetailView: View {
     func fetchSongDetail() async throws {
         let decoder = JSONDecoder()
         
-        guard let url = URL(string: "http://localhost:8080/song/\(songId)?type=\(type)") else {
+        guard let url = URL(string: "https://bnbkapi.live/song/\(songId)?type=\(type)") else {
             print("Invalid URL")
             return
         }
@@ -159,20 +177,17 @@ struct NyanyianDetailView: View {
 }
 
 struct InfoPopoverView: View {
-    let keyId: String
-    let keyOg: String?
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            Text("Nada Dasar")
-                .font(.headline)
-            if let keyOg = keyOg {
-                Text("Nada dasar \(keyOg) merupakan nada asli dari lagu ini (berdasarkan Salvation Army Song Book).")
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                Text("Nada Dasar")
+                    .font(.title)
+                Text("Nada dasar merupakan nada asli dari lagu ini (berdasarkan Salvation Army Song Book).")
                     .font(.body)
+                Text("Nada dasar merupakan nada yang disesuaikan.")
+                    .font(.body)
+                Spacer()
             }
-            Text("Nada dasar \(keyId) merupakan nada yang disesuaikan.")
-                .font(.body)
-            
-            Spacer()
         }
     }
 }

@@ -20,7 +20,7 @@ extension ContentView {
             
             isFetching = true
             
-            guard let url = URL(string: "http://localhost:8080/song/index/all?page=\(page)&size=50&sortBy=songId&sortDirection=ASC") else {
+            guard let url = URL(string: "https://bnbkapi.live/song/index/all?page=\(page)&size=50&sortBy=songId&sortDirection=ASC") else {
                 print("Invalid URL")
                 isFetching = false
                 return

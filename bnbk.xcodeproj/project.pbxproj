@@ -12,6 +12,7 @@
 		297BE7022BF88D3400F9DBF8 /* songIndex.json in Resources */ = {isa = PBXBuildFile; fileRef = 297BE7012BF88D3300F9DBF8 /* songIndex.json */; };
 		297BE7042BF88D5700F9DBF8 /* SongIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BE7032BF88D5700F9DBF8 /* SongIndex.swift */; };
 		297BE7062BF88E2B00F9DBF8 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297BE7052BF88E2B00F9DBF8 /* Bundle-Decodable.swift */; };
+		29A58C7D2BFF5C0F00D06ECB /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A58C7C2BFF5C0F00D06ECB /* SearchView.swift */; };
 		29D3776A2BF8CE1C0006AB52 /* NyanyianDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D377692BF8CE1C0006AB52 /* NyanyianDetailView.swift */; };
 		29D3776C2BF8CEAD0006AB52 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3776B2BF8CEAD0006AB52 /* Song.swift */; };
 		29D3776E2BF8D5530006AB52 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D3776D2BF8D5530006AB52 /* Response.swift */; };
@@ -46,6 +47,7 @@
 		297BE7012BF88D3300F9DBF8 /* songIndex.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = songIndex.json; path = ../../../BnbkProjectAssets/database/index/songIndex.json; sourceTree = "<group>"; };
 		297BE7032BF88D5700F9DBF8 /* SongIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongIndex.swift; sourceTree = "<group>"; };
 		297BE7052BF88E2B00F9DBF8 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		29A58C7C2BFF5C0F00D06ECB /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		29D377692BF8CE1C0006AB52 /* NyanyianDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NyanyianDetailView.swift; sourceTree = "<group>"; };
 		29D3776B2BF8CEAD0006AB52 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		29D3776D2BF8D5530006AB52 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				29D377692BF8CE1C0006AB52 /* NyanyianDetailView.swift */,
+				29A58C7C2BFF5C0F00D06ECB /* SearchView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A58C7D2BFF5C0F00D06ECB /* SearchView.swift in Sources */,
 				29D3776C2BF8CEAD0006AB52 /* Song.swift in Sources */,
 				295B604F2BFCF44D00A0B536 /* SongListViewModel.swift in Sources */,
 				29D3776A2BF8CE1C0006AB52 /* NyanyianDetailView.swift in Sources */,
