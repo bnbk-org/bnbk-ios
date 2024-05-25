@@ -7,9 +7,9 @@
 
 import Foundation
 
-extension ContentView {
+extension HomeView {
     @Observable
-    class ViewModel {
+    class Model {
         private(set) var songIndexes = [SongIndex]()
         public var isFetching = false
         public var currentPage = 1
@@ -39,7 +39,7 @@ extension ContentView {
                 }
                 
                 do {
-                    let response = try JSONDecoder().decode(ArrayResponse.self, from: data)
+                    let response = try JSONDecoder().decode(ArrayIndexResponse.self, from: data)
                     DispatchQueue.main.async {
                         self.songIndexes.append(contentsOf: response.data)
                         self.currentPage = page

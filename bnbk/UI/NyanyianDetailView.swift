@@ -105,7 +105,7 @@ struct NyanyianDetailView: View {
                         
                         Text(song.verse[0])
                         
-                        if let choruses = song.chorus, !choruses.isEmpty {
+                        if let choruses = song.chorus, !choruses.isEmpty, !choruses[0].isEmpty {
                             VStack(alignment: .leading) {
                                 Text("KOOR")
                                     .font(.subheadline)
@@ -168,7 +168,7 @@ struct NyanyianDetailView: View {
         
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
-            let response = try decoder.decode(Response.self, from: data)
+            let response = try decoder.decode(SongResponse.self, from: data)
             song = response.data
         } catch {
             print("Error decoding JSON: \(error)")

@@ -7,16 +7,25 @@
 
 import Foundation
 
-struct Response: Codable {
+struct SongResponse: Codable {
     let code: Int
     let status: String
-    let data: Song?
+    let data: Song
     let paging: String?
     let errors: String?
     let metadata: String?
 }
 
-struct ArrayResponse: Codable {
+struct ArraySongResponse: Codable {
+    let code: Int
+    let status: String
+    let data: [Song]
+    let paging: String?
+    let errors: String?
+    let metadata: String?
+}
+
+struct ArrayIndexResponse: Codable {
     let code: Int
     let status: String
     let data: [SongIndex]
