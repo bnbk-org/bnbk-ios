@@ -9,11 +9,15 @@ import Foundation
 
 extension HomeView {
     @Observable
-    class Model {
+    class ViewModel: ObservableObject {
         private(set) var songIndexes = [SongIndex]()
         public var isFetching = false
         public var currentPage = 1
         private var totalPages = 9
+        
+        public func addSongIndex(songIndex: SongIndex) {
+            songIndexes.append(songIndex)
+        }
         
         public func fetchSongs(page: Int) {
             guard !isFetching, page <= totalPages else { return }

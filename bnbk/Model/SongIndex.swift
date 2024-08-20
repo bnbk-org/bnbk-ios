@@ -22,8 +22,8 @@ struct SongIndex: Codable, Identifiable {
 }
 
 struct TitleIndex: Codable {
-    let en: String?
     let id: String
+    let en: String?
     let nl: String?
     let kr: String?
 }

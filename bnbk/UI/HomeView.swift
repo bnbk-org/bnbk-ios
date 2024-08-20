@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var viewModel = Model()
+    @StateObject var viewModel = ViewModel()
+    
     var body: some View {
-        
         VStack {
-            
-            Text("Hello")
-            
             NavigationStack {
                 List(viewModel.songIndexes.indices, id: \.self) { index in
                     let idx = viewModel.songIndexes[index]
@@ -42,6 +39,7 @@ struct HomeView: View {
                         }
                     }
                 }
+                .listStyle(.plain)
                 .navigationTitle("Nyanyian")
                 .onAppear {
                     viewModel.fetchSongs(page: 0)
@@ -52,6 +50,9 @@ struct HomeView: View {
     }
 }
 
-#Preview {
-    HomeView()
+#Preview("Basic Home Preview") {
+    var vm = HomeView.ViewModel()
+    vm.addSongIndex(songIndex: SongIndex(id: "1", songId: 1, title: TitleIndex(id: "O S'lamat Yang Luas", en: nil, nl: nil, kr: nil), songType: "nyanyian"))
+    return HomeView(viewModel: vm)
 }
+
