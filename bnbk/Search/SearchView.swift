@@ -26,7 +26,7 @@ struct SearchView: View {
                             }
                             VStack(alignment: .leading) {
                                 Text(song.title.id)
-                                    .font(.headline)
+                                    .font(.title3)
 
                                 if let en = song.title.en, !en.isEmpty {
                                     Text(en)
@@ -35,16 +35,34 @@ struct SearchView: View {
                                         .foregroundStyle(.secondary)
                                 }
                             }
+                            
+                            let limitedText = song.highlights.reduce((Text(""), 0, false)) { (result, highlight) -> (Text, Int, Bool) in
+                                var (text, charCount, hasMoreText) = result
+                                
+                                // Calculate remaining characters allowed
+                                let remaining = 40 - charCount
+                                
+                                // If no remaining characters, return the current result
+                                guard remaining > 0 else {
+                                    return (text, charCount, true) // Mark that there's more text not shown
+                                }
+                                
+                                // Limit the highlight value to the remaining characters
+                                let highlightValue = String(highlight.value.prefix(remaining))
+                                
+                                // Append the text and update the character count
+                                let newText = highlight.type == "hit" ? text + Text(highlightValue).bold() : text + Text(highlightValue)
+                                let newCharCount = charCount + highlightValue.count
+                                
+                                // Check if the highlight was fully consumed or if there's more text
+                                let isTruncated = highlight.value.count > highlightValue.count
+                                
+                                return (newText, newCharCount, hasMoreText || isTruncated)
+                            }.0 // Extracting the Text component
 
-                            // Process highlights and display complete texts
-//                            if let highlights = song.highlights { // Make sure highlights is optional
-//                                let completeTexts = processHighlights(highlights: highlights)
-//                                ForEach(completeTexts, id: \.self) { text in
-//                                    Text(text)
-//                                        .font(.caption)
-//                                        .foregroundStyle(.secondary)
-//                                }
-//                            }
+                            let finalText = limitedText + (song.highlights.reduce(0) { $0 + $1.value.count } > 40 ? Text("...") : Text(""))
+
+                            finalText.padding(.top, 1).font(.callout)
                         }.onAppear {
                             if index == model.songs.count - 1 && model.hasMoreSongs {
                                 Task {
@@ -68,32 +86,10 @@ struct SearchView: View {
                 }
             }
         }
+    
 
-        func processHighlights(highlights: [[String: String]]) -> [String] {
-            var completeTexts: [String] = []
-            var currentText = ""
-
-            for highlight in highlights {
-                if let type = highlight["type"], let value = highlight["value"] {
-                    if type == "text" {
-                        currentText.append(value)
-                    } else if type == "hit" {
-                        if !currentText.isEmpty {
-                            completeTexts.append(currentText)
-                            currentText = ""
-                        }
-                        currentText.append(value)
-                    }
-                }
-            }
-
-            if !currentText.isEmpty {
-                completeTexts.append(currentText)
-            }
-
-            return completeTexts
-        }
 }
+
 
 #Preview {
     SearchView()

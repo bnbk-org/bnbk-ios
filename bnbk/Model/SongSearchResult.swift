@@ -20,7 +20,7 @@ struct SongSearchResult: Codable, Identifiable {
     let highlights: [HighlightSegment]
 }
 
-struct HighlightSegment: Codable, Identifiable {
+struct HighlightSegment: Codable, Identifiable, Hashable{
     let value: String
     let type: String
     

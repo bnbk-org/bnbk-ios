@@ -50,7 +50,7 @@ extension SearchView {
             
             searchTask?.cancel()
             searchTask = Task {
-                try? await Task.sleep(nanoseconds: 300_000_000) // 300ms delay
+                try? await Task.sleep(nanoseconds: 500_000_000) // 500ms delay
                 await searchSongs(toSearch: toSearch, page: toSearch == lastToSearch ? lastPage + 1 : 0)
             }
         }
