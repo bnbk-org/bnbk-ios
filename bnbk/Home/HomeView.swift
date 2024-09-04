@@ -51,8 +51,5 @@ struct HomeView: View {
 }
 
 #Preview("Basic Home Preview") {
-    var vm = HomeView.ViewModel()
-    vm.addSongIndex(songIndex: SongIndex(id: "1", songId: 1, title: TitleIndex(id: "O S'lamat Yang Luas", en: nil, nl: nil, kr: nil), songType: "nyanyian"))
-    return HomeView(viewModel: vm)
+    HomeView()
 }
-

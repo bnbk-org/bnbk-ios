@@ -1,5 +1,203 @@
 {
   "sourceLanguage" : "id",
-  "strings" : {},
+  "strings" : {
+    "%@ %lld" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ %2$lld"
+          }
+        }
+      }
+    },
+    "%@: %@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@: %2$@"
+          }
+        }
+      }
+    },
+    "%lld" : {
+
+    },
+    "= %lld" : {
+
+    },
+    "Beranda" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Home"
+          }
+        }
+      }
+    },
+    "BNBK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SASB"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "BNBK"
+          }
+        }
+      }
+    },
+    "BTB %lld" : {
+
+    },
+    "BTB alt. %lld" : {
+
+    },
+    "Buku Nyanyian" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Song Book"
+          }
+        }
+      }
+    },
+    "Cari" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search"
+          }
+        }
+      }
+    },
+    "Do = %@%@" : {
+      "localizations" : {
+        "id" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Do = %1$@%2$@"
+          }
+        }
+      }
+    },
+    "Favorit" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved"
+          }
+        }
+      }
+    },
+    "Judul, pengarang, lirik" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title, author, lyrics"
+          }
+        }
+      }
+    },
+    "Kembali" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        }
+      }
+    },
+    "KOOR" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "CHORUS"
+          }
+        }
+      }
+    },
+    "KS %lld" : {
+
+    },
+    "Lainnya" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Others"
+          }
+        }
+      }
+    },
+    "Nada Dasar" : {
+
+    },
+    "Nada dasar merupakan nada asli dari lagu ini (berdasarkan Salvation Army Song Book)." : {
+
+    },
+    "Nada dasar merupakan nada yang disesuaikan." : {
+
+    },
+    "Nyanyian" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Song"
+          }
+        }
+      }
+    },
+    "Nyanyian Bala Keselamatan" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salvation Army Song"
+          }
+        }
+      }
+    },
+    "Pelajari lagu Ini" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "About this song"
+          }
+        }
+      }
+    },
+    "Profile View" : {
+
+    },
+    "SASB %lld" : {
+
+    },
+    "Saved View" : {
+
+    },
+    "SF %lld" : {
+
+    }
+  },
   "version" : "1.0"
 }

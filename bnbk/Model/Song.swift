@@ -7,13 +7,12 @@
 
 import Foundation
 
-// base model for a song
 struct Song: Codable, Identifiable {
     let id: String
     let songId: Int
     let title: Title
     let authors: [Author]?
-    let type: String
+    let type: String?
     let verse: [String]
     let chorus: [String]?
     let music: Music

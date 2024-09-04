@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct bnbkApp: App {
+struct BnbkApp: App {
 
     var body: some Scene {
         WindowGroup {
