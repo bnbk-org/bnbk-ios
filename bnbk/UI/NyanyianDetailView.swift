@@ -1,5 +1,5 @@
 //
-//  SongDetail.swift
+//  NyanyianDetailView.swift
 //  bnbk
 //
 //  Created by Heryan Djaruma on 18/05/24.
@@ -138,7 +138,6 @@ struct NyanyianDetailView: View {
                                 .padding()
                                 .presentationBackground(.white)
                                 .presentationDetents(Set(heights))
-                                
                         }
                     }.padding()
                     
@@ -161,7 +160,7 @@ struct NyanyianDetailView: View {
     func fetchSongDetail() async throws {
         let decoder = JSONDecoder()
         
-        guard let url = URL(string: "https://bnbkapi.live/song/\(songId)?type=\(type)") else {
+        guard let url = URL(string: "https://web.bnbk.org/api/song/\(songId)?type=\(type)") else {
             print("Invalid URL")
             return
         }
@@ -190,6 +189,10 @@ struct InfoPopoverView: View {
             }
         }
     }
+}
+
+#Preview("API View") {
+    NyanyianDetailView(songId: 1)
 }
 
 // Sample Data

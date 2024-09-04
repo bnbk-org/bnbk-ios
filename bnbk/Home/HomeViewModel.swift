@@ -24,7 +24,7 @@ extension HomeView {
             
             isFetching = true
             
-            guard let url = URL(string: "https://bnbkapi.live/song/index/all?page=\(page)&size=50&sortBy=songId&sortDirection=ASC") else {
+            guard let url = URL(string: "https://web.bnbk.org/api/song/index/all?page=\(page)&size=50&sortBy=songId&sortDirection=ASC") else {
                 print("Invalid URL")
                 isFetching = false
                 return
