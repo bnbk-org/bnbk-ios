@@ -21,7 +21,7 @@ extension SearchView {
         func searchSongs(toSearch: String, page: Int) async {
             print("[DEBUG] Searching songs collection with keyword: \(toSearch.uppercased())")
             do {
-                let url = URL(string: "https://bnbkapi.live/song/search?search=\(toSearch)&page=\(page)&size=20")!
+                let url = URL(string: "https://web.bnbk.org/api/song/search?search=\(toSearch)&page=\(page)&size=20")!
                 let (data, _) = try await URLSession.shared.data(from: url)
                 let response = try JSONDecoder().decode(ArraySongResponse.self, from: data)
 
