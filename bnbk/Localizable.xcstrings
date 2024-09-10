@@ -1,6 +1,12 @@
 {
   "sourceLanguage" : "id",
   "strings" : {
+    "" : {
+
+    },
+    "..." : {
+
+    },
     "%@ %lld" : {
       "localizations" : {
         "id" : {
@@ -122,6 +128,9 @@
         }
       }
     },
+    "Koor" : {
+
+    },
     "KOOR" : {
       "localizations" : {
         "en" : {
@@ -186,7 +195,13 @@
         }
       }
     },
+    "Pengakuan Iman" : {
+
+    },
     "Profile View" : {
+
+    },
+    "Recent" : {
 
     },
     "SASB %lld" : {
@@ -196,6 +211,12 @@
 
     },
     "SF %lld" : {
+
+    },
+    "Shortcut" : {
+
+    },
+    "Song of the Day" : {
 
     }
   },
