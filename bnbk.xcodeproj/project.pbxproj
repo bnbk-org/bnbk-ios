@@ -196,7 +196,6 @@
 		29E2A0542BF712B8005595E6 /* bnbk */ = {
 			isa = PBXGroup;
 			children = (
-				292C932E2C90797D00D66C54 /* Info.plist */,
 				29E2A0552BF712B8005595E6 /* BnbkApp.swift */,
 				29F6A5222C90150000B4C508 /* Welcome */,
 				29C1B2E22C8E4E3900E371C8 /* Auth */,
@@ -211,6 +210,7 @@
 				29E2A05B2BF712BA005595E6 /* Assets.xcassets */,
 				29F5D1372C75AADB00B09F01 /* Localizable.xcstrings */,
 				29F6A5252C901D0900B4C508 /* bnbk.entitlements */,
+				292C932E2C90797D00D66C54 /* Info.plist */,
 			);
 			path = bnbk;
 			sourceTree = "<group>";
@@ -596,7 +596,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bnbk;
+				PRODUCT_BUNDLE_IDENTIFIER = org.bnbk.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -635,7 +635,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.bnbk;
+				PRODUCT_BUNDLE_IDENTIFIER = org.bnbk.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

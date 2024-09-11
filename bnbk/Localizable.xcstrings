@@ -33,6 +33,15 @@
     "= %lld" : {
 
     },
+    "Atau" : {
+
+    },
+    "Baru saja" : {
+
+    },
+    "Belum memiliki akun?" : {
+
+    },
     "Beranda" : {
       "localizations" : {
         "en" : {
@@ -42,6 +51,9 @@
           }
         }
       }
+    },
+    "Berita terbaru" : {
+
     },
     "BNBK" : {
       "extractionState" : "manual",
@@ -87,6 +99,12 @@
         }
       }
     },
+    "Cari lagu atau koor dalam buku nyanyian, aransemen, audio, dan video prajurit Bala Keselamatan dari seluruh dunia 🌏" : {
+
+    },
+    "Daftar" : {
+
+    },
     "Do = %@%@" : {
       "localizations" : {
         "id" : {
@@ -96,6 +114,9 @@
           }
         }
       }
+    },
+    "Email" : {
+
     },
     "Favorit" : {
       "localizations" : {
@@ -107,6 +128,15 @@
         }
       }
     },
+    "Haleluya ☝️" : {
+
+    },
+    "HELLO" : {
+
+    },
+    "Heyto" : {
+
+    },
     "Judul, pengarang, lirik" : {
       "localizations" : {
         "en" : {
@@ -116,6 +146,9 @@
           }
         }
       }
+    },
+    "Kata Sandi" : {
+
     },
     "Kembali" : {
       "extractionState" : "manual",
@@ -127,6 +160,9 @@
           }
         }
       }
+    },
+    "Konten" : {
+
     },
     "Koor" : {
 
@@ -153,6 +189,21 @@
           }
         }
       }
+    },
+    "Lanjut ke Aplikasi" : {
+
+    },
+    "Lihat semua" : {
+
+    },
+    "Lupa kata sandi" : {
+
+    },
+    "Masuk" : {
+
+    },
+    "Masuk dengan Google" : {
+
     },
     "Nada Dasar" : {
 
@@ -201,22 +252,19 @@
     "Profile View" : {
 
     },
-    "Recent" : {
-
-    },
     "SASB %lld" : {
 
     },
     "Saved View" : {
 
     },
+    "Selamat datang di aplikasi BNBK!" : {
+
+    },
     "SF %lld" : {
 
     },
-    "Shortcut" : {
-
-    },
-    "Song of the Day" : {
+    "Sorotan Hari Ini" : {
 
     }
   },
