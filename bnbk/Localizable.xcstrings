@@ -43,6 +43,7 @@
 
     },
     "Beranda" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -132,9 +133,6 @@
 
     },
     "HELLO" : {
-
-    },
-    "Heyto" : {
 
     },
     "Judul, pengarang, lirik" : {
@@ -265,6 +263,9 @@
 
     },
     "Sorotan Hari Ini" : {
+
+    },
+    "Welcome" : {
 
     }
   },

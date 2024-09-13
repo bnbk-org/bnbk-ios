@@ -12,8 +12,11 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            HomeViewV1().tabItem {
-                Label("Beranda", systemImage: "house")
+//            HomeViewV1().tabItem {
+//                Label("Beranda", systemImage: "house")
+//            }
+            WelcomeView().tabItem {
+                Label("Welcome", systemImage: "house")
             }
             SearchView().tabItem {
                 Label("Cari", systemImage: "magnifyingglass")

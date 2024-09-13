@@ -7,9 +7,13 @@
 
 import SwiftUI
 import SwiftData
+import Firebase
 
 @main
 struct BnbkApp: App {
+    init() {
+        FirebaseApp.configure()
+    }
 
     var body: some Scene {
         WindowGroup {

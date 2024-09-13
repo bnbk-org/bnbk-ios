@@ -14,12 +14,15 @@ struct LoginView: View {
     
     var body: some View {
         VStack(alignment: .center) {
-            Rectangle()
-                .frame(maxWidth: .infinity, maxHeight: 250)
-                .foregroundStyle(Color("PrimaryColor"))
+            Image("BG Blue")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(maxHeight: 200)
+                .clipped()
+                
             
             Text("Masuk")
-                .font(.title)
+                .font(Font.custom("Paytone One", size: 28))
                 .padding()
             
             VStack(alignment: .leading) {
@@ -55,15 +58,7 @@ struct LoginView: View {
             .padding()
             
             Spacer()
-                .frame(height: 30)
-            
-            HStack {
-                Text("Belum memiliki akun?")
-                    .font(.callout)
-                Text("Daftar")
-                    .foregroundStyle(Color.blue)
-                    .font(.callout)
-            }
+                .frame(height: 20)
             
             Button(action: {
                 
@@ -80,12 +75,17 @@ struct LoginView: View {
             }
             .padding()
             
-            Spacer()
-            
-            Button("Heyto") {
-                
+            HStack {
+                Text("Belum memiliki akun?")
+                    .font(.callout)
+                Text("Daftar")
+                    .foregroundStyle(Color.blue)
+                    .font(.callout)
             }
-                .buttonStyle(.borderedProminent)
+            
+            
+            
+            Spacer()
         }
         .ignoresSafeArea(.keyboard)
         .ignoresSafeArea(edges: .top)

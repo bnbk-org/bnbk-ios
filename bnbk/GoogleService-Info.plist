@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>786029257863-38hjr8d5d2unhtftr33n9di6lvkcnhct.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.786029257863-38hjr8d5d2unhtftr33n9di6lvkcnhct</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>786029257863-uc91rdrctjb65os9utq73h3oorpc8ejj.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBoUV3T1MvVaVDoY5r8wtmCgsTkxyd_ZUg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>786029257863</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.bnbk.ios</string>
+	<key>PROJECT_ID</key>
+	<string>bnbk-3712</string>
+	<key>STORAGE_BUCKET</key>
+	<string>bnbk-3712.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:786029257863:ios:3cdcbb8c497fbe8cd6c422</string>
+</dict>
+</plist>
