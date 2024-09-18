@@ -130,7 +130,7 @@ struct WelcomeView: View {
     private func handleAuthorization(result: Result<ASAuthorization, Error>) {
         switch result {
         case .success(let authResults):
-            viewModel.signInToFirebase(authResults)
+            viewModel.appleSignIn(authResults)
         case .failure(let error):
             print("Authorization failed: \(error.localizedDescription)")
         }
