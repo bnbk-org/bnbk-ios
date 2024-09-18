@@ -15,7 +15,6 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             ZStack {
-                
                 GeometryReader { geometry in
                     VStack {
                         Image("SA Landing")
@@ -31,13 +30,14 @@ struct WelcomeView: View {
                                 .foregroundStyle(Color("Primary"))
                             
                             Text("Selamat datang di aplikasi BNBK!")
+                                .font(Font.custom("Helvetica Neue", size: 20))
                                 .foregroundStyle(.black)
                                 .font(.title3)
                                 .padding(.top, 5)
                             
                             Text("Cari lagu atau koor dalam buku nyanyian, aransemen, audio, dan video prajurit Bala Keselamatan dari seluruh dunia 🌏")
                                 .foregroundStyle(.black)
-                                .font(.subheadline)
+                                .font(Font.custom("Helvetica Neue", size: 16))
                                 .multilineTextAlignment(.center)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .padding(.top, 20)
@@ -112,8 +112,6 @@ struct WelcomeView: View {
             print("Authorization failed: \(error.localizedDescription)")
         }
     }
-    
-
 }
 
 #Preview {

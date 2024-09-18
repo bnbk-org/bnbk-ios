@@ -1,22 +1,17 @@
 //
-//  ContentView.swift
+//  MainView.swift
 //  bnbk
 //
-//  Created by Heryan Djaruma on 17/05/24.
+//  Created by Heryan Djaruma on 18/09/24.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct MainView: View {
     var body: some View {
-        
         TabView {
-//            HomeViewV1().tabItem {
-//                Label("Beranda", systemImage: "house")
-//            }
-            WelcomeView().tabItem {
-                Label("Welcome", systemImage: "house")
+            HomeViewV1().tabItem {
+                Label("Beranda", systemImage: "house")
             }
             SearchView().tabItem {
                 Label("Cari", systemImage: "magnifyingglass")
@@ -32,5 +27,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    MainView()
 }

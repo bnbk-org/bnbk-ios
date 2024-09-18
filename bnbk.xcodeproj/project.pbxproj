@@ -40,6 +40,8 @@
 		29FBF6872C94393600FA93A6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FBF6862C94393600FA93A6 /* GoogleService-Info.plist */; };
 		29FBF6892C943D5600FA93A6 /* RandomNonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FBF6882C943D5600FA93A6 /* RandomNonce.swift */; };
 		29FBF68B2C943E5E00FA93A6 /* WelcomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FBF68A2C943E5E00FA93A6 /* WelcomeViewModel.swift */; };
+		29FE925F2C9B22D600C4E3B1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE925E2C9B22D600C4E3B1 /* OnboardingView.swift */; };
+		29FE92612C9B230A00C4E3B1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FE92602C9B230A00C4E3B1 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		29FBF6862C94393600FA93A6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		29FBF6882C943D5600FA93A6 /* RandomNonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNonce.swift; sourceTree = "<group>"; };
 		29FBF68A2C943E5E00FA93A6 /* WelcomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewModel.swift; sourceTree = "<group>"; };
+		29FE925E2C9B22D600C4E3B1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		29FE92602C9B230A00C4E3B1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,7 +189,6 @@
 				29D377692BF8CE1C0006AB52 /* NyanyianDetailView.swift */,
 				2911115E2C0068D800D4AFD2 /* SavedView.swift */,
 				291111602C006A8600D4AFD2 /* ProfileView.swift */,
-				29E2A0572BF712B8005595E6 /* ContentView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				29E2A0552BF712B8005595E6 /* BnbkApp.swift */,
+				29E2A0572BF712B8005595E6 /* ContentView.swift */,
 				29F6A5222C90150000B4C508 /* Welcome */,
 				29C1B2E22C8E4E3900E371C8 /* Auth */,
 				296E6E322C7CBB940006FF1C /* Search */,
@@ -230,6 +234,8 @@
 				29F5D1372C75AADB00B09F01 /* Localizable.xcstrings */,
 				29F6A5252C901D0900B4C508 /* bnbk.entitlements */,
 				292C932E2C90797D00D66C54 /* Info.plist */,
+				29FE925E2C9B22D600C4E3B1 /* OnboardingView.swift */,
+				29FE92602C9B230A00C4E3B1 /* MainView.swift */,
 			);
 			path = bnbk;
 			sourceTree = "<group>";
@@ -433,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				291111612C006A8600D4AFD2 /* ProfileView.swift in Sources */,
+				29FE92612C9B230A00C4E3B1 /* MainView.swift in Sources */,
 				296E6E352C7CD9B90006FF1C /* SongSearchResult.swift in Sources */,
 				29A58C7D2BFF5C0F00D06ECB /* SearchView.swift in Sources */,
 				294817AC2C8B326000C070F8 /* Constant.swift in Sources */,
@@ -445,6 +452,7 @@
 				29D3776A2BF8CE1C0006AB52 /* NyanyianDetailView.swift in Sources */,
 				294817A92C8B2A1300C070F8 /* HomeViewV1.swift in Sources */,
 				29C1B2E42C8E4E4D00E371C8 /* LoginView.swift in Sources */,
+				29FE925F2C9B22D600C4E3B1 /* OnboardingView.swift in Sources */,
 				297BE7042BF88D5700F9DBF8 /* SongIndex.swift in Sources */,
 				2911115F2C0068D800D4AFD2 /* SavedView.swift in Sources */,
 				29E2A0582BF712B8005595E6 /* ContentView.swift in Sources */,

@@ -33,9 +33,6 @@
     "= %lld" : {
 
     },
-    "Atau" : {
-
-    },
     "Baru saja" : {
 
     },
@@ -43,7 +40,6 @@
 
     },
     "Beranda" : {
-      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -101,6 +97,9 @@
       }
     },
     "Cari lagu atau koor dalam buku nyanyian, aransemen, audio, dan video prajurit Bala Keselamatan dari seluruh dunia 🌏" : {
+
+    },
+    "Continue to Welcome Screen" : {
 
     },
     "Daftar" : {
@@ -188,7 +187,7 @@
         }
       }
     },
-    "Lanjut ke Aplikasi" : {
+    "Lewati" : {
 
     },
     "Lihat semua" : {
@@ -247,9 +246,6 @@
     "Pengakuan Iman" : {
 
     },
-    "Profile View" : {
-
-    },
     "SASB %lld" : {
 
     },
@@ -262,10 +258,16 @@
     "SF %lld" : {
 
     },
+    "Sign Out" : {
+
+    },
     "Sorotan Hari Ini" : {
 
     },
-    "Welcome" : {
+    "This is the main app view" : {
+
+    },
+    "Welcome to the Onboarding Screen" : {
 
     }
   },
