@@ -24,7 +24,7 @@ struct HomeViewV1: View {
             ScrollView {
                 // song of the day
                 VStack(alignment: .leading) {
-                    Text("Sorotan Hari Ini")
+                    Text("Sorotan")
                         .font(.title)
                     VStack {
                         ZStack {
