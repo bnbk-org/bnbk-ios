@@ -139,6 +139,24 @@ extension WelcomeView {
 
         }
         
+        func anonymousSignIn() {
+            Auth.auth().signInAnonymously { (authResult, error) in
+                if let error = error {
+                    self.log.error("Error signing in anonymously: \(error.localizedDescription)")
+                    return
+                }
+                guard let authResult = authResult else {
+                    self.log.error("No auth result.")
+                    return
+                }
+
+                let uid = authResult.user.uid
+                self.log.info("Anonymous user signed in with Firebase UID: \(uid)")
+                self.sendPostRequest(id: uid, email: "anon")
+            }
+        }
+
+        
         func sendPostRequest(id: String, email: String) {
             let url = URL(string: "https://web.bnbk.org/api/user")!
             

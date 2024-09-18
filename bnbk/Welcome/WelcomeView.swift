@@ -93,6 +93,9 @@ struct WelcomeView: View {
                             .foregroundStyle(.black)
                         }
                         .padding()
+                        .onTapGesture {
+                            viewModel.anonymousSignIn()
+                        }
                     }
                     .padding()
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)

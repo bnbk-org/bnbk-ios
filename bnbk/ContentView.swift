@@ -14,7 +14,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        NavigationStack {
+        NavigationStack() {
             if !hasSeenOnboarding {
                 OnboardingView()
             } else if !isUserLoggedIn {
