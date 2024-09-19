@@ -12,6 +12,7 @@
 		291111612C006A8600D4AFD2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291111602C006A8600D4AFD2 /* ProfileView.swift */; };
 		291111632C00704C00D4AFD2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291111622C00704C00D4AFD2 /* SearchViewModel.swift */; };
 		292C932D2C90780600D66C54 /* PaytoneOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 292C932C2C90780500D66C54 /* PaytoneOne-Regular.ttf */; };
+		29314C702C9C933700BFCE7B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29314C6F2C9C933700BFCE7B /* ProfileViewModel.swift */; };
 		294817A92C8B2A1300C070F8 /* HomeViewV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294817A82C8B2A1300C070F8 /* HomeViewV1.swift */; };
 		294817AC2C8B326000C070F8 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294817AB2C8B326000C070F8 /* Constant.swift */; };
 		295B604F2BFCF44D00A0B536 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295B604E2BFCF44D00A0B536 /* HomeViewModel.swift */; };
@@ -70,6 +71,7 @@
 		291111652C00957800D4AFD2 /* LearningResources.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LearningResources.md; sourceTree = "<group>"; };
 		292C932C2C90780500D66C54 /* PaytoneOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PaytoneOne-Regular.ttf"; path = "../../../../../Downloads/Paytone One/PaytoneOne-Regular.ttf"; sourceTree = "<group>"; };
 		292C932E2C90797D00D66C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		29314C6F2C9C933700BFCE7B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		294817A82C8B2A1300C070F8 /* HomeViewV1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewV1.swift; sourceTree = "<group>"; };
 		294817AB2C8B326000C070F8 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		295B604E2BFCF44D00A0B536 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -148,6 +150,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		29314C6E2C9C930A00BFCE7B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				291111602C006A8600D4AFD2 /* ProfileView.swift */,
+				29314C6F2C9C933700BFCE7B /* ProfileViewModel.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		294817AA2C8B324600C070F8 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,7 +202,6 @@
 			children = (
 				29D377692BF8CE1C0006AB52 /* NyanyianDetailView.swift */,
 				2911115E2C0068D800D4AFD2 /* SavedView.swift */,
-				291111602C006A8600D4AFD2 /* ProfileView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -228,6 +238,7 @@
 				29C1B2E22C8E4E3900E371C8 /* Auth */,
 				296E6E322C7CBB940006FF1C /* Search */,
 				29F5D1362C75A21F00B09F01 /* Home */,
+				29314C6E2C9C930A00BFCE7B /* Profile */,
 				291111642C00956B00D4AFD2 /* Docs */,
 				29D377682BF8CE000006AB52 /* UI */,
 				294817AA2C8B324600C070F8 /* Util */,
@@ -456,6 +467,7 @@
 				29D3776A2BF8CE1C0006AB52 /* NyanyianDetailView.swift in Sources */,
 				294817A92C8B2A1300C070F8 /* HomeViewV1.swift in Sources */,
 				29C1B2E42C8E4E4D00E371C8 /* LoginView.swift in Sources */,
+				29314C702C9C933700BFCE7B /* ProfileViewModel.swift in Sources */,
 				29FE925F2C9B22D600C4E3B1 /* OnboardingView.swift in Sources */,
 				297BE7042BF88D5700F9DBF8 /* SongIndex.swift in Sources */,
 				2911115F2C0068D800D4AFD2 /* SavedView.swift in Sources */,
