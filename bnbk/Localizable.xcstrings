@@ -96,6 +96,9 @@
         }
       }
     },
+    "Cari kata kunci" : {
+
+    },
     "Cari lagu atau koor dalam buku nyanyian, aransemen, audio, dan video prajurit Bala Keselamatan dari seluruh dunia 🌏" : {
 
     },
@@ -119,6 +122,7 @@
 
     },
     "Favorit" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -261,10 +265,13 @@
     "Sign Out" : {
 
     },
-    "Sorotan Hari Ini" : {
+    "Sorotan" : {
 
     },
     "This is the main app view" : {
+
+    },
+    "Tidak dapat menemukan apapun" : {
 
     },
     "Welcome to the Onboarding Screen" : {

@@ -16,9 +16,9 @@ struct MainView: View {
             SearchView().tabItem {
                 Label("Cari", systemImage: "magnifyingglass")
             }
-            SavedView().tabItem {
-                Label("Favorit", systemImage: "music.note.list")
-            }
+//            SavedView().tabItem {
+//                Label("Favorit", systemImage: "music.note.list")
+//            }
             ProfileView().tabItem {
                 Label("Lainnya", systemImage: "person")
             }

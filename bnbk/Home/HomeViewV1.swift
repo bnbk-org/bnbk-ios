@@ -117,6 +117,7 @@ struct HomeViewV1: View {
                     
                 }
             }
+            .scrollIndicators(.hidden)
             
         }
         
