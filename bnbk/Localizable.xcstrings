@@ -153,6 +153,9 @@
         }
       }
     },
+    "Edit Profile" : {
+
+    },
     "Email" : {
 
     },
@@ -267,6 +270,9 @@
         }
       }
     },
+    "Logout" : {
+
+    },
     "Lupa kata sandi" : {
       "localizations" : {
         "en" : {
@@ -370,9 +376,6 @@
     "SF %lld" : {
 
     },
-    "Sign Out" : {
-
-    },
     "Sorotan" : {
       "localizations" : {
         "en" : {
@@ -382,9 +385,6 @@
           }
         }
       }
-    },
-    "This is the main app view" : {
-
     },
     "Tidak dapat menemukan apapun" : {
       "localizations" : {

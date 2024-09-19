@@ -13,13 +13,16 @@ extension ProfileView {
     @Observable
     class ViewModel {
         
-        var user: User? = nil
+        var displayName: String?
         
-        init() {
-            Auth.auth().addStateDidChangeListener { [weak self] _, user in
-                self?.user = user
+        init(displayName: String? = nil) {
+            if let displayName = displayName {
+                self.displayName = displayName
+            } else {
+                Auth.auth().addStateDidChangeListener { [weak self] _, user in
+                    self?.displayName = user?.displayName
+                }
             }
         }
-        
     }
 }
