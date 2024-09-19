@@ -34,7 +34,14 @@
 
     },
     "Baru saja" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recently viewed"
+          }
+        }
+      }
     },
     "Belum memiliki akun?" : {
 
@@ -50,7 +57,14 @@
       }
     },
     "Berita terbaru" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Latest news"
+          }
+        }
+      }
     },
     "BNBK" : {
       "extractionState" : "manual",
@@ -97,16 +111,37 @@
       }
     },
     "Cari kata kunci" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for keywords"
+          }
+        }
+      }
     },
     "Cari lagu atau koor dalam buku nyanyian, aransemen, audio, dan video prajurit Bala Keselamatan dari seluruh dunia 🌏" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Search for songs, arrangements, audios, and videos from Salvationists around the world 🌏"
+          }
+        }
+      }
     },
     "Continue to Welcome Screen" : {
 
     },
     "Daftar" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register"
+          }
+        }
+      }
     },
     "Do = %@%@" : {
       "localizations" : {
@@ -149,7 +184,14 @@
       }
     },
     "Kata Sandi" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password"
+          }
+        }
+      }
     },
     "Kembali" : {
       "extractionState" : "manual",
@@ -163,10 +205,24 @@
       }
     },
     "Konten" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Contents"
+          }
+        }
+      }
     },
     "Koor" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chorus"
+          }
+        }
+      }
     },
     "KOOR" : {
       "localizations" : {
@@ -192,19 +248,54 @@
       }
     },
     "Lewati" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skip"
+          }
+        }
+      }
     },
     "Lihat semua" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "See all"
+          }
+        }
+      }
     },
     "Lupa kata sandi" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forget Password?"
+          }
+        }
+      }
     },
     "Masuk" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign In"
+          }
+        }
+      }
     },
     "Masuk dengan Google" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign In with Google"
+          }
+        }
+      }
     },
     "Nada Dasar" : {
 
@@ -251,7 +342,14 @@
 
     },
     "Profil" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Profile"
+          }
+        }
+      }
     },
     "SASB %lld" : {
 
@@ -260,7 +358,14 @@
 
     },
     "Selamat datang di aplikasi BNBK!" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to BNBK!"
+          }
+        }
+      }
     },
     "SF %lld" : {
 
@@ -269,13 +374,27 @@
 
     },
     "Sorotan" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Highlights"
+          }
+        }
+      }
     },
     "This is the main app view" : {
 
     },
     "Tidak dapat menemukan apapun" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can’t find anything"
+          }
+        }
+      }
     },
     "Welcome to the Onboarding Screen" : {
 

@@ -33,7 +33,7 @@ struct ProfileView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(Color("BG"))
-        .navigationTitle("")
+        .navigationTitle("Profil")
     }
     
     private func signOut() {
