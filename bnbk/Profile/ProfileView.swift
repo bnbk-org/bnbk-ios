@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import FirebaseAuth
 
 struct ProfileView: View {
     @State private var viewModel: ViewModel
@@ -26,10 +25,15 @@ struct ProfileView: View {
                     .frame(width: 100, height: 100)
                     .foregroundStyle(Color.gray)
                 
-                if let displayName = viewModel.displayName {
+                if let displayName = viewModel.name {
                     Text(displayName)
                         .font(Font.custom("Helvetica Neue", size: 20))
                         .padding()
+                }
+                
+                if let email = viewModel.user?.email {
+                    Text(email)
+                        .font(Font.custom("Helvetica Neue", size: 16))
                 }
                 
                 Button(action: {
@@ -44,7 +48,7 @@ struct ProfileView: View {
                 .foregroundStyle(Color.white)
                 .background {
                     RoundedRectangle(cornerRadius: 25)
-                        .fill(Color("Primary").opacity(0.75))
+                        .fill(Color("Secondary"))
                 }
             }
             .frame(maxWidth: .infinity)
@@ -59,7 +63,7 @@ struct ProfileView: View {
             
             VStack {
                 Button(action: {
-                    signOut()
+                    viewModel.signOut()
                 }) {
                     HStack {
                         Image(systemName: "rectangle.portrait.and.arrow.right")
@@ -85,14 +89,7 @@ struct ProfileView: View {
         .navigationTitle("Profil")
     }
     
-    private func signOut() {
-        do {
-            try Auth.auth().signOut()
-            print("User signed out")
-        } catch {
-            print("Error signing out: \(error.localizedDescription)")
-        }
-    }
+
 }
 
 #Preview {
